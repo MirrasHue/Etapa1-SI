@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adicionar Produto</title>
+        <meta name="theme-color" content="#8257E5">
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    </head>
+    <body id="painel">
+        <div id="container">
+            <br>
+            <div id="navegacao"><a href="home.html">< Voltar</a></div>
+
+            <div class="main">
+                <h3>Adicionar Produto</h3>
+                <form method="POST" action="" class="form-cadastro">
+
+                    <fieldset id="dados">
+                        <legend>Dados do Produto</legend>
+
+                        <p>Código: <input type="text" maxlength="11" name="codigo" id="codigo" required></p>
+                        <p>Nome: <input type="text" maxlength="50" name="nome" id="nome" max="50" required></p>
+                        <p>Quantidade: <input type="number" min="0" name="qtd" id="qtd" required></p>
+                        <p>Preço: <input type="text" maxlength="50" name="preço" id="preço" max="50" required></p>
+
+                        <label for="tipoproduto">Tipo Produto: </label>
+                        <select name="tipoproduto" id="tipoproduto" required onclick="selectedFunc(this.value)">
+                            <optgroup>
+                                <option value="Perecível" selected>Perecível</option>
+                                <option value="Não Perecível">Não Perecível</option>
+                            </optgroup>
+                        </select>
+                        
+                    </fieldset>
+                    
+                    <div id="btn-enviar">
+                        <input type="submit" class="button" id="botaoenviar" value="Adicionar">
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </body>
+</html>

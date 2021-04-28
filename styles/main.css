@@ -1,0 +1,216 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+    font-size: 60%; /* controle das medidas rem (mobile first)*/
+}
+
+* { /*Para qualquer elemento html*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+body, input, button, textarea {
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
+}
+
+#container{
+    width: 90vw;
+    max-width: 700px;
+}
+
+#painel #container div#navegacao a{
+    text-decoration: none;
+    margin-left: 1rem;
+    border: 1px solid black;
+    background-color: #e6e4e4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    cursor: pointer;
+}
+
+@media(min-width: 700px){
+    :root{
+        font-size: 62.5%; /*todo os rem vai ser relativo a 10px*/
+    }
+}
+
+#def-btn {
+    margin: 1rem;
+    text-align: center;
+}
+
+#btn {
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #e6e4e4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    cursor: pointer;
+    margin: 1rem;
+    width: 90vw;
+    max-width: 250px;
+}
+
+#painel #container{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Definição do cabeçalho*/
+
+#container header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container header .logo{
+    max-width: 20%;
+    max-height: 20%;
+}
+
+#container header .user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container a#button{
+    font: 500 1.6rem Poppins;
+    color: black;
+    font-size: 12pt;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    background-color: #e6e4e4;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+	cursor: pointer;
+}
+
+#container div.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container div.main .busca form{
+    margin: 3rem;
+}
+
+#container div.main .busca input.button{
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#container .main .form-cadastro fieldset{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+#container .main .form-cadastro fieldset legend{
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+#container .main .form-cadastro fieldset p{
+    margin: 5px;
+    margin-top: 10px;
+}
+
+#container .main .form-cadastro fieldset p input{
+    margin-left: 5px;
+    font: 500 1.6rem Poppins;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#container .main .form-cadastro fieldset p label{
+    margin-left: 5px;
+}
+
+#container .main .form-cadastro fieldset#dados label{
+    margin-left: 5px;
+}
+
+#container .main .form-cadastro fieldset#dados select#data{
+    padding: 1rem;
+    font: 500 1.6rem Poppins;
+}
+
+#container .main .form-cadastro fieldset p#text-box{
+    display: flex;
+}
+
+#container .main .form-cadastro fieldset p#text-box textarea{
+    margin-left: 5px;
+    resize: none;
+    padding: 5px;
+}
+
+#container .main .form-cadastro div#btn-enviar input{
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+#container .main .form-cadastro div#btn-enviar{
+    display: block;
+    float: right;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 700px) {
+    #painel #container {
+        max-width: 100vw;
+    }
+}
+
+#container .main .form-cadastro fieldset#dados select{
+    margin: 5px;
+    padding: 5px;
+    font: 500 1.6rem Poppins;
+    display: flex;
+}
